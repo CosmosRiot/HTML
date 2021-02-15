@@ -5,7 +5,7 @@
     </head>
     <body>
         <table>
-            <form>
+            <form action="">
                 <tr>
                     <td><label for="firstName">First Name:</label></td>
                     <td><input type="text" id="firstName" name="firstName"></td>
@@ -37,10 +37,38 @@
                 </tr>
                 <tr></tr>
                 <tr>
-                    <td><label for="userEmail">Email:</label></td>
-                    <td><input type="email" id="userEmail" name="userEmail"></td>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" id="male" name="genderSelect" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="genderSelect" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="genderSelect" value="other">
+                        <label for="other">Other</label>
+                    </td>
                 </tr>
                 <tr></tr>
+                <tr><td colspan="2">A short description about yourself:</td></tr>
+                <tr>
+                    <td colspan="2"><textarea name="userDescript" rows="10" cols="39"></textarea></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td><label for="favLang">Favorite Language:</label></td>
+                    <td><select name = "favLang" id = "favLang">
+                            <option value = "javaScript">JavaScript</option>
+                            <option value = "python">Python</option>
+                            <option value = "HTML">HTML</option>
+                            <option value = "CSS">CSS</option>
+                            <option value = "C++">C++</option>
+                            <option value = "VisualBasic">VisualBasic</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td><input type = "submit" value = "Submit"></td>
+                </tr>
             </form>
         </table>
 
